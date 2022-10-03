@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+    </head>
+
+    <header id="header">
+        <div class="banner">
+
+            <div class="splash_container"> <!--Contains Profile Pic and Social Media-->
+                <div class="name">
+                    <img src="./resources/images/headshot.png">
+                </div>
+                <div class="title">
+                    <h1 style="font-size:40px;">RE-ELECT</h1>
+                    <h1>ALEM TESFAY</h1>
+                    
+                    <div class="social">
+                        <a href="https://www.facebook.com/alex.tesfay.14" target="_blank"><img src="./resources/images/socialmedia/facebook.png"></a>
+                        <a href="https://t.snapchat.com/ExocDH9c" target="_blank"><img src="./resources/images/socialmedia/snapchat.png"></a>
+                        <a href="https://instagram.com/alem._____?igshid=YmMyMTA2M2Y=" target="_blank"><img src="./resources/images/socialmedia/instagram.png"></a>
+                        <a href="https://www.tiktok.com/@alemdoesthings?_t=8W4yMt63En8&_r=1" target="_blank"><img src="./resources/images/socialmedia/tiktok.png"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vote">
+                <h2>VOTING BEGINS OCTOBER 12 & 13</h2>
+            </div>
+            <button id="enter">CLICK</button>
+        </div>
+    </header>
+
+
+
+    <body>
+
+        <nav>
+            <h1>Alem Tesfay</h1>
+        </nav>
+        
+        <article class="about">
+            <div class="summary">
+                <h2>About Me</h2>
+                <p>Hello, my name is Alem Tesfay, and I'm hoping to get re-elected to the student council this year. Since the school setting has normalized, I believe it's important to get students more involved with everything our campus has to offer.I'm currently in my third academic year at Macewan, majoring in management with a double minor in marketing and political science. Being a part of various extracurricular activities has positively affected the way I approach my academics. I believe if you only go to school to obtain a certificate, you aren’t getting your money's worth. The skills and networking opportunities you can gain from being a part of things like student groups, the ambassador program, or simply joining committees is priceless. If I get re-elected to the student council, I will continue to work hard to advocate for student engagement. Thank you for your consideration and support!</p>
+                <div class="anime">
+                    <h3>Favorite Anime</h3>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <img src="./resources/images/alem.png">
+            </div>
+        </article>
+        <article class="about">
+            <div class="summary">
+                <h2>About Me</h2>
+                <p>Hello, my name is Alem Tesfay, and I'm hoping to get re-elected to the student council this year. Since the school setting has normalized, I believe it's important to get students more involved with everything our campus has to offer.I'm currently in my third academic year at Macewan, majoring in management with a double minor in marketing and political science. Being a part of various extracurricular activities has positively affected the way I approach my academics. I believe if you only go to school to obtain a certificate, you aren’t getting your money's worth. The skills and networking opportunities you can gain from being a part of things like student groups, the ambassador program, or simply joining committees is priceless. If I get re-elected to the student council, I will continue to work hard to advocate for student engagement. Thank you for your consideration and support!</p>
+                <div class="anime">
+                    <h3>Favorite Anime</h3>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <img src="./resources/images/alem.png">
+            </div>
+        </article>
+        <article class="about">
+            <div class="summary">
+                <h2>About Me</h2>
+                <p>Hello, my name is Alem Tesfay, and I'm hoping to get re-elected to the student council this year. Since the school setting has normalized, I believe it's important to get students more involved with everything our campus has to offer.I'm currently in my third academic year at Macewan, majoring in management with a double minor in marketing and political science. Being a part of various extracurricular activities has positively affected the way I approach my academics. I believe if you only go to school to obtain a certificate, you aren’t getting your money's worth. The skills and networking opportunities you can gain from being a part of things like student groups, the ambassador program, or simply joining committees is priceless. If I get re-elected to the student council, I will continue to work hard to advocate for student engagement. Thank you for your consideration and support!</p>
+                <div class="anime">
+                    <h3>Favorite Anime</h3>
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <img src="./resources/images/alem.png">
+            </div>
+        </article>
+    </body>
+
+    <footer>
+
+    </footer>
+
+    <script>
+        let button = document.getElementById('enter');
+        let header = document.getElementById('header');
+        let body = document.body;
+        let html = document.html;
+
+        button.addEventListener("click", () =>{
+            header.style.animationName='fade';
+            body.style.overflow="scroll";
+            html.style.overflow="scroll";
+
+        })
+
+        header.addEventListener('animationend', () =>{
+            header.style.display='none';
+        })
+    </script>
+</html>
