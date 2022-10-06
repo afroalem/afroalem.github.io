@@ -2,10 +2,8 @@ html{
     background: url("./resources/images/backgroundimage.jpg");
     background-size:cover;
     background-repeat: no-repeat;
-    background-position:top;
+    background-position:center;
     background-attachment: fixed;
-    
-
 }
 body, html {
     display:flex;
