@@ -155,12 +155,10 @@ header{
 }
 
 .summary{
-    height:fit-content;
     display:flex;
     align-items:flex-start;
     justify-content: center;
-    height:fit-content;
-    max-height: 800px;
+    max-height: 550px;
 }
 
 .summary p{
@@ -169,7 +167,7 @@ header{
 }
 
 .dropdown-content.summary{
-    height:fit-content;
+    height:0;
 }
 
 @media only screen and (max-width:1600px) {
@@ -179,7 +177,6 @@ header{
   }
 
 .hobbies{
-    height:fit-content;
     display:flex;
     justify-content: center;
     align-items: center;
