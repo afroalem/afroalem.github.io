@@ -1,9 +1,10 @@
 html{
-    background: url("./resources/images/backgroundimage.jpg");
+    background: url("./resources/images/backgroundimagetest.jpg");
     background-size:cover;
     background-repeat: no-repeat;
-    background-position:center;
+    background-position:top;
     background-attachment: fixed;
+    
 }
 body, html {
     display:flex;
@@ -37,11 +38,12 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height:70vh;
+    height:fit-content;
     width:100%;
     color: white;
-    margin:0;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.183);
+    padding-top: 24px;
+
+
 }
 
 .splash_container{ /*Profile Formatting */
@@ -62,6 +64,12 @@ header{
 .title{
     margin-left:16px;
     font-size:36px;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.507);
+}
+
+.title h1{
+    margin-left:8px;
+    margin-right:8px;
 }
 
 .social img{ /*Social Media Formatting*/
@@ -71,12 +79,26 @@ header{
     border-radius: 50%;
 }
 
+
 .social img:hover{
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.432);
+}
+
+@media only screen and (max-width:1100px){
+    .social img{
+        height: 90px;
+        margin: 0 8px;
+    }
+}
+.bar{
+    height:8px;
     background-color: white;
 }
 
+
 .vote{
     margin-top:80px;
+    font-size:24px;
 }
 
 .banner button{
@@ -100,6 +122,7 @@ header{
 
 .dropdown-button:hover{
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.255);
+    cursor: pointer;
 }
 
 .dropdown-button h2{
@@ -108,7 +131,7 @@ header{
 
 .dropdown-content{
     overflow:hidden;
-    background-color: rgba(255, 255, 255, 0.617);
+    background-color: rgba(255, 255, 255, 0.808);
     display:block;
     height:0px;     
     max-height:400px;
@@ -131,21 +154,24 @@ header{
     padding-bottom: 100px;
     flex-direction: column;
     align-items: center;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.183);
 }
 
 .summary{
     height:fit-content;
     display:flex;
-    align-items: center;
+    align-items:flex-start;
+    justify-content: center;
     height:fit-content;
     max-height: 600px;
 }
 
 .summary p{
-    margin: 12px;
     font-size: 28px;
     padding: 8px;
+}
+
+.dropdown-content.summary{
+    height:fit-content;
 }
 
 @media only screen and (max-width:1600px) {
